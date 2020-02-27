@@ -1,12 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Feb 27 19:21:40 2020
-
-@author: DELL
-"""
-
-
-
 from matplotlib import pyplot as plt
 from matplotlib.patches import Rectangle
 from matplotlib.patches import Circle
