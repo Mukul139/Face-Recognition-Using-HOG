@@ -1,13 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Feb 27 18:35:18 2020
-
-@author: DELL
-"""
-
-
-
-
 # extract and plot each detected face in a photograph
 from matplotlib import pyplot as plt
 from matplotlib.patches import Rectangle
@@ -19,8 +9,8 @@ import os
 
 file=[]
 files=[]
-path2='C:/Users/DELL/Desktop/face detection/'
-for r, d, f in os.walk(path2):
+path = 'path/to/faces/'
+for r, d, f in os.walk(path):
     for file in f:
         if '.jpg' in file:
             files.append(os.path.join(r, file))
@@ -43,7 +33,7 @@ for f in files:
             plt.savefig(save,dpi=200)
 
 ##Remove jpg in face file
-for r, d, f in os.walk(path2):
+for r, d, f in os.walk(path):
     for folder in d:
         folders.append(os.path.join(r, folder))
 for f in folders:
@@ -63,7 +53,7 @@ import glob
 
 dff=pd.DataFrame()
 
-path = 'path/to/faces/'
+
 
 
 folders = []
